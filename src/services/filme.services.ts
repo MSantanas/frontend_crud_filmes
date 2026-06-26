@@ -27,7 +27,7 @@ export async function createFilme(filme: CreateFilmeDTO): Promise<void>
   })
 }
 
-
+//!!!!!!!! sessao update
 export async function updateFilme(id: number, filme: UpdateFilmeDTO): Promise<void>
 {
   await fetch(`${API_URL}/filmes/${id}`, {
@@ -39,6 +39,8 @@ export async function updateFilme(id: number, filme: UpdateFilmeDTO): Promise<vo
   })
 }
 
+
+//deletando filme!!
 export async function deleteFilme(id: number): Promise<void>
 {
   await fetch(`${API_URL}/filmes/${id}`,{
